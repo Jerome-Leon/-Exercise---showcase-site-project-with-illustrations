@@ -21,19 +21,25 @@
 
 <body>
     <header>
-      <nav>
+      <nav id="nav" class="active">
+        <div class="logo">
+          <h1>Hedeby</h1>
+        </div>
         <ul>
-          <li class="logo"><a href="#">Hedeby</a></li>
-          <li><a href="#langue">Langue</a></li>
-          <li><a href="#reserver">Réserver</a></li>
-          <li><a href="#contact">Nous contacter</a></li>
+            <li>
+                <a class="menu" href="#">Langue</a>
+            </li>
+            <li>
+                <a class="menu" href="#">Réserver</a>
+            </li>
+            <li>
+                <a class="menu" href="#">Contact</a>
+            </li>
         </ul>
+        <div id="icons"></div>
+        <script src="/script.js"></script>
       </nav>
       <div class="imgprincipale">
-        <h1>Hedeby</h1>
-        <div class="tiret-1"></div>
-        <h3>Le grand marché du nord</h3>
-
       </div>
     </header>
 
@@ -44,7 +50,7 @@
         <img src="./Images/motif1.png" alt="picto drakkar">
       </div>
       <div class="text-intro">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas ipsum fugiat dolor temporibus doloremque dolorum reprehenderit ut, est possimus nostrum modi quibusdam cupiditate eveniet et ipsa quo iste ducimus ? Consectetur adipisicing elit. Rem quas ipsum fugiat dolor temporibus doloremque dolorum reprehenderit ut, est possimus nostrum modi quibusdam cupiditate eveniet.</p>
+        <p class="encart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas ipsum fugiat dolor temporibus doloremque dolorum reprehenderit ut, est possimus nostrum modi quibusdam cupiditate eveniet et ipsa quo iste ducimus ? Consectetur adipisicing elit. Rem quas ipsum fugiat dolor temporibus doloremque dolorum reprehenderit ut, est possimus nostrum modi quibusdam cupiditate eveniet.</p>
       </div>
       <div class="images-presentation">
         <h4>Situer la ville</h4>
@@ -68,42 +74,44 @@
           <h2>Votre séjour en ville</h2>
           <img src="./Images/motif1.png" alt="picto">
         </div>
-        <h3 class="encart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, atque omnis consequuntur deserunt alias in. Eveniet dolorem consequuntur ad cumque at voluptate fugit magnam eum repellat? Hic excepturi voluptatum laudantium reiciendis minima illum saepe quibusdam. Consequuntur nemo modi ratione autem?</h3>
+        <p class="encart">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi doloremque aperiam impedit pariatur minima debitis doloribus dolores quam dolore, eum molestiae minus amet suscipit iure omnis officia dolor dicta culpa tenetur odio explicabo! Molestiae amet nisi quasi eum beatae, consequatur sequi cumque magni eaque praesentium repudiandae suscipit nihil hic minima in temporibus quaerat ea omnis ab porro laborum assumenda? Cumque maiores officiis, quae illo quia ipsa, dolorum iusto ex earum laudantium pariatur sapiente ut aliquam voluptate fuga esse. Possimus a, ratione nobis esse odio nemo, natus quam vero illo dolor assumenda perferendis porro iusto ipsam pariatur dolores reiciendis ipsa.</p>
         <Div class="galerie">
-          <div class="gauche"><img src="./Images/chantier.jpg" alt=""><p>Visite du chantier naval.</p></div>
-          <div class="droite"><img src="./Images/drakkar.jpg" alt=""><p>La sortie en drakkar.</p></div>
-          <div class="gauche"><img src="./Images/Enterrement.jpg" alt=""><p>L'enterrement d'un grand guerrier viking.</p></div>
-          <div class="droite"><img src="./Images/montagne.jpg" alt=""><p>Soirée bivouac en bord de mer.</p></div>
+          <div  class="left"><img src="./Images/chantier.jpg" alt=""><p>Visite du chantier naval.</p></div>
+          <div class="right"><img src="./Images/drakkar.jpg" alt=""><p>La sortie en drakkar.</p></div>
+          <div  class="left"><img src="./Images/Enterrement.jpg" alt=""><p>L'enterrement d'un grand guerrier viking.</p></div>
+          <div class="right"><img src="./Images/montagne.jpg" alt=""><p>Soirée bivouac en bord de mer.</p></div>
         </div>
     </section>
-
+    <div id="contact" class="active">  
+      <div class="BTNcontact"> 
+        <img src="./Images/motif-stabilité.png" alt="décor gauche">
+        <button class="volet" href="#">Nous contacter</button>  
+        <img src="./Images/motif-stabilité.png" alt="décor droite">    
+      </div>  
+      <form >   
+        <h4>Nom</h4>    
+        <input type="text">    
+        <h4>Prénom</h4>    
+        <input type="text">    
+        <h4>E-mail</h4>    
+        <input type="text">    
+        <h4>Votre message</h4>    
+        <textarea name="" id="" cols="30" rows="10"></textarea>    
+        <button>Envoyer</button>    
+      </form>    
+    </div>    
     <footer>
-      <div class="contact">
-        <img src="./Images/frise-fleche-gauche.png" alt="décor gauche">
-        <h2>Contactez-nous</h2>
-        <img src="./Images/frise-fleche-droite.png" alt="décor droite">
-      </div>
-      
-      <form >
-        <h4>Nom</h4>
-        <input type="text">
-        <h4>Prénom</h4>
-        <input type="text">
-        <h4>E-mail</h4>
-        <input type="text">
-        <h4>Votre message</h4>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Envoyer</button>
-      </form>
-      <div class="tiret-2"></div>
-      <div class="copyright-and-icons">
-        <div class="copyright">
-          <span>© Jérôme Léon(); 2024</span>
-        </div>
-        <div class="icons">
-          <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
-          <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
-          <a href="http://www.instagram.fr"><i class="fa fa-instagram"></i></a>
+      <div class="social">
+        <div class="tiret-2"></div>
+        <div class="copyright-and-icons">
+          <div class="copyright">
+            <span>© Jérôme Léon - 2024</span>
+          </div>
+          <div class="icons">
+            <a href="http://www.instagram.fr"><i class="fa fa-instagram"></i></a>
+            <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+            <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+          </div>
         </div>
       </div>
     </footer>
