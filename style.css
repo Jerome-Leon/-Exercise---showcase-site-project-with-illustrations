@@ -477,10 +477,10 @@ button:hover {
         display: block;
     }
     #icons:before {
-        content: "\2715";
+        content: "\2630";
     }
     .active #icons:before {
-        content: "\2630";
+        content: "\2715";
     }
     #nav .logo h3 {
         font-size: 4rem;
@@ -488,7 +488,7 @@ button:hover {
     }
     nav ul {
         position: fixed;
-        left: 70%;
+        left: 100%;
         top: 50px;
         flex-direction: column;
         background: #FFFFDD;
@@ -497,7 +497,7 @@ button:hover {
         transition: 0.3s;
     }
     nav li {
-        padding: 5px 0;
+        padding: 8px 0;
         transition: ease-in-out 0.5s;
     }
     nav li:hover {
@@ -505,7 +505,7 @@ button:hover {
         transition: ease-in-out 0.5s;
     }
     nav.active ul {
-        left: 100%;
+        left: 70%;
         transition: ease-in-out 0.5s;
     }
 
