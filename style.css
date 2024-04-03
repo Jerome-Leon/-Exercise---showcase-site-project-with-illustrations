@@ -437,6 +437,13 @@ button:hover {
 
 /* ********************** MEDIA QUERIES ********************** */
 
+@media screen and (max-width: 1800px){
+
+    .imgprincipale {
+        height: 70vh;
+    }
+}
+
 @media screen and (max-width: 1240px){
 
     .imgprincipale {
